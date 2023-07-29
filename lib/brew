@@ -1,0 +1,31 @@
+#!/usr/bin/env zsh
+
+# This function handles the installation of command-line tools using Homebrew
+run_brew() {
+	# Ensure we’re using the latest Homebrew
+	update_homebrew
+
+	# Install packages from the Brewfile
+	install_brew_packages
+
+	# Remove outdated versions from the cellar
+	cleanup_homebrew
+}
+
+# Update Homebrew to the latest version
+update_homebrew() {
+	e_process "Updating Homebrew"
+	brew update
+}
+
+# Install packages listed in Brewfile
+install_brew_packages() {
+	e_process "Installing packages from Brewfile"
+	brew bundle
+}
+
+# Remove outdated package versions
+cleanup_homebrew() {
+	e_process "Cleaning up Homebrew"
+	brew cleanup
+}

@@ -1,0 +1,38 @@
+#!/usr/bin/env zsh
+
+# List of dotfiles
+dotfiles=(.ackrc .aliases .bash_colors .bash_completion .bash_profile .bash_prompt .bashrc .editorconfig .exports .functions .gitattributes .gitconfig .gitignore .inputrc .nanorc .npmrc .osx .vim .vimrc .zprofile .zshrc .zshrc_config)
+
+# Function to create a symlink for a given file, with error handling
+create_symlink() {
+    local file="$1"
+    
+    if [ ! -L "$HOME/$file" ] ; then
+        if [ -e "$HOME/$file" ]; then
+            echo "Removing existing file: $file"
+            rm -rf "$HOME/$file" || { echo "Failed to remove existing file: $file"; return 1; }
+        fi
+
+        echo "Creating symlink for $file"
+        ln -s "$HOME/.dotfiles/$file" "$HOME" || { echo "Failed to create symlink for: $file"; return 1; }
+
+        echo "Symlink created for: $file"
+    fi
+}
+
+# Main function to install dotfiles
+run_dotfiles() {
+    for file in "${dotfiles[@]}"; do
+        # Handle special cases where manual intervention is needed
+        if [[ "$file" == ".gitconfig" || "$file" == ".npmrc" ]] && [ -f "$HOME/$file" ] && [ "$USER" != "ViniciusVinna" ]; then
+            echo "$file already exists, please handle it manually"
+            continue
+        fi
+
+        # Create a symlink for the current file
+        create_symlink "$file" || echo "Failed to setup: $file"
+    done
+
+    # Source the updated zsh config
+    source "$HOME/.zshrc"
+}

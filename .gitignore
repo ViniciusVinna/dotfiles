@@ -1,0 +1,90 @@
+# IDEA Ignores #
+################
+*.iml
+*.ipr
+*.iws
+.idea/
+.fleet/
+out/
+local.properties
+
+# Modules and Caches
+###########################
+.sass-cache
+.tmp
+.vscode
+node_modules
+bower_components
+
+# Built Application Files
+###########################
+*.apk
+*.ap_
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+
+# Logs and databases #
+######################
+.env
+log/
+*.log
+*.sql
+*.sqlite
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# VCS #
+#######
+.svn
+.svn/
+CVS
+
+# XCode 4 #
+###########
+*.xcuserstate
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Sensitive data
+~/.npmrc
+.config/configstore
+.config/hub
+.config/gatsby
+.config/firebase
+.config/thefuck
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+Brewfile.lock.json
+thumbs.db
+Desktop.ini
+# REMINDER: do not edit Icon^M^M Carriage Returns
+Icon[]
+#REMINDER

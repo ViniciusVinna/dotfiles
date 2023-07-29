@@ -1,0 +1,131 @@
+# Navigation Shortcuts
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~"
+alias -- -="cd -"
+
+# Useful Aliases
+alias bup='brew update && brew upgrade'
+alias please=sudo
+alias hosts='sudo $EDITOR /etc/hosts'
+alias trimcopy="tr -d '\n' | pbcopy"
+alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
+
+# List Files
+alias lh='exa -aF'  # horizontally including dotfiles
+alias lha='exa -aFx'  # horizontally and across including dotfiles
+alias l='exa -lFh --git'  # vertically
+alias la='exa -laFh --git'  # vertically including dotfiles
+alias ll='colorls -Al'  # all files colorized in long format, including dot files
+alias lsd='exa -laFDh --git'  # only directories
+alias lf='exa -laFh --git'  # only files
+alias lt='exa -laFh --git --sort=oldest'  # order by time desc
+
+# IP Addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en1"
+alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+
+# Enhanced WHOIS lookups
+alias whois="whois -h whois-servers.net"
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache"
+
+# View HTTP traffic
+alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+
+# Canonical hex dump; some systems have this symlinked
+type hd > /dev/null || alias hd="hexdump -C"
+
+# OS X has no `md5sum`, so use `md5` as a fallback
+type md5sum > /dev/null || alias md5sum="md5"
+
+# GIT Aliases
+alias undopush="git push -f origin HEAD^:master"
+alias g="git"
+alias ghd="github"
+alias gl="git log --oneline --all --graph --decorate"
+alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
+alias gs="git status"
+alias gsl="git stash list"
+alias gsp="git stash pop"
+alias gss="git stash save"
+alias gptags="git push && git push --tags"
+alias recursive-pull="find . -type d -name .git -exec git --git-dir={} --work-tree=\$PWD/{}/.. pull \;"
+
+# NPM Aliases
+alias ni='npm install'
+alias nid='npm install --save-dev'
+alias nig='npm install -g'
+alias nu='npm update'
+alias nug='npm update -g'
+alias np='npm prune'
+alias nrm='npm rm'
+alias ns='npm search'
+alias npatch='npm version patch'
+alias nminor='npm version minor'
+alias nmajor='npm version major'
+alias ncus='ncu --dep=prod,dev'
+alias ncup='ncu -ui --dep=prod,dev --format group'
+alias reinstall='rm -rf node_modules package-lock.json && npm i'
+
+# NPM Scripts Aliases
+alias start='npm start'
+alias dev='npm run dev'
+alias watch='npm run watch'
+alias build='npm run build'
+alias deploy='npm run deploy'
+alias publish='npm run publish'
+alias format='npm run format'
+alias typecheck='npm run typecheck'
+alias validate='npm run validate'
+alias lint='npm run lint'
+alias slint='npm run lint:styles'
+alias t='npm test'
+alias tc='npm run test:coverage'
+alias tw='npm run test:watch'
+alias coverage='open coverage/lcov-report/index.html'
+
+alias pipup='pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U'
+
+alias crna='expo init'
+alias bp='bundle-phobia'
+alias rl='release'
+alias v="vim"
+alias run='serve -o'
+alias pks='package-size'
+alias dk='cd ~/Desktop'
+alias ~f='open ~/'
+alias reload='source ~/.zshrc'
+alias unused='depcheck'
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+
+# ping only once and die
+alias pi="ping -o"
+
+# File size
+alias fs="stat -f \"%z bytes\""
+alias duh="du -hcs"
+alias dh="df -h"
+
+# ROT13-encode text. Works for decoding, too! ;)
+alias rot13='tr a-zA-Z n-za-mN-ZA-M'
+
+# Empty the Trash on all mounted volumes and the main HDD
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
+
+# Hide/show all desktop icons (useful when presenting)
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
+alias plistbuddy="/usr/libexec/PlistBuddy"
+
+# One of @janmoesen’s ProTip™s
+for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
+	alias "$method"="lwp-request -m '$method'"
+done

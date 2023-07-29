@@ -1,0 +1,28 @@
+#!/usr/bin/env zsh
+
+run_help() {
+    cat <<EOT
+
+Description:
+    This script is used to install and configure various components of the dotfiles repository.
+
+Usage:
+    ./script_name [options]
+
+Options:
+    --apps          Install applications only
+    --brew          Install Homebrew packages
+    --dotfiles      Symlink dotfiles
+    --fonts         Install fonts
+    --help, -h      Print this help text
+    --no-apps       Suppress application installs
+    --no-log        Suppress verbose logging
+    --npm           Install NPM global packages
+    --quicklook     Install Quick Look plugins
+    --ruby          Install Ruby gems
+    --tools         Install bash tools
+
+Documentation can be found at https://github.com/ViniciusVinna/dotfiles
+
+EOT
+}

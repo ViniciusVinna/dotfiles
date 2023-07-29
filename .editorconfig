@@ -1,0 +1,75 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Matches the exact files either package.json or .travis.yml
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2
+
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab
+
+# 4 space indentation
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Markdown files: no trailing whitespaces allowed, and keep the line length within 80 characters
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = 80
+
+# JS, TypeScript and JSON files
+[*.js,*.ts,*.tsx,*.json]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+
+# CSS, HTML and SCSS files
+[*.css,*.html,*.scss]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+
+# Java files
+[*.java]
+indent_style = space
+indent_size = 4
+
+# PHP files
+[*.php]
+indent_style = space
+indent_size = 4
+
+# Elixir files
+[*.ex, *.exs]
+indent_style = space
+indent_size = 2
+
+# Rust files
+[*.rs]
+indent_style = space
+indent_size = 4
+
+# Ruby files
+[*.rb]
+indent_style = space
+indent_size = 2
+
+# Swift files
+[*.swift]
+indent_style = space
+indent_size = 4
+
+# Kotlin files
+[*.kt, *.kts]
+indent_style = space
+indent_size = 4

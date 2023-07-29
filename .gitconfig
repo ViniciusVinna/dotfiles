@@ -1,0 +1,155 @@
+[user]
+  name = Vinícius Ribeiro Fernandes
+	email = vinicius.vrf@gmail.com
+  signingkey = 734EA53C
+
+[commit]
+  gpgSign = true
+
+[credential]
+  helper = osxkeychain
+
+[alias]
+  amend = commit --amend
+  br = branch
+  c = commit -am
+  co = checkout
+  cp = cherry-pick
+  df = diff --color --color-words --abbrev
+  dl = pull
+  f = "!git ls-files | grep -i"
+  ignored = ls-files -o -i --exclude-standard
+  la = "!git config -l | grep alias | cut -c 7-"
+  ll = log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --numstat
+  ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  oops = commit --amend --no-edit
+  open = browse
+  out = log @{u}..
+  prune = fetch --prune
+  s = status -s
+  tags = tag -l
+  undo = reset --soft HEAD^
+  untrack = rm --cache --
+  up = push
+
+[color]
+  ui = always
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[core]
+  attributesfile = ~/.gitattributes
+  autocrlf = input
+  excludesfile = ~/.gitignore
+  pager = delta
+
+[delta "interactive"]
+  keep-plus-minus-markers = false
+
+[delta "decorations"]
+  commit-decoration-style = blue ol
+  commit-style = raw
+  file-style = omit
+  hunk-header-decoration-style = blue box
+  hunk-header-file-style = red
+  hunk-header-line-number-style = "#067a00"
+  hunk-header-style = file line-number syntax
+
+[diff]
+  algorithm = patience
+  mnemonicPrefix = true
+  renames = true
+
+[difftool]
+  prompt = false
+
+[difftool "kaleidoscope"]
+  cmd = ksdiff \"$LOCAL\" \"$REMOTE\"
+
+[filter "hawser"]
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
+
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  required = true
+  process = git-lfs filter-process
+
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+
+[grep]
+  break = true
+  heading = true
+  lineNumber = true
+  extendedRegexp = true
+
+[init]
+  defaultBranch = main
+
+[interactive]
+  diffFilter = delta --color-only --features=interactive
+
+[merge]
+  ff = only
+  conflictstyle = diff3
+  log = true
+  tool = kaleidoscope
+
+[mergetool]
+  keepBackup = false
+
+[mergetool "kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
+
+[pull]
+  rebase = true
+
+[push]
+  default = simple
+
+[rebase]
+  autoStash = true
+
+[tag]
+  sort = version:refname
+
+[url "git@github.com:"]
+  insteadOf = "gh:"
+  pushInsteadOf = "github:"
+  pushInsteadOf = "git://github.com/"
+
+[url "git://github.com/"]
+  insteadOf = "github:"
+
+[url "git@gist.github.com:"]
+  insteadOf = "gst:"
+  pushInsteadOf = "gist:"
+  pushInsteadOf = "git://gist.github.com/"
+
+[url "git://gist.github.com/"]
+  insteadOf = "gist:"
+
+[url "git@github.com:ViniciusVinna/"]
+  insteadOf = "git://github.com/ViniciusVinna/"
+[gpg]
+	program = /opt/homebrew/bin/gpg

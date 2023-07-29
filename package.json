@@ -1,0 +1,21 @@
+{
+  "name": "@viniciusvinna/dotfiles",
+  "version": "0.1.0",
+  "description": "Vinicius's dotfiles",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViniciusVinna/dotfiles.git"
+  },
+  "keywords": [
+    "dotfiles"
+  ],
+  "author": "Vinícius Ribeiro Fernandes <vinicius.vrf@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ViniciusVinna/dotfiles/issues"
+  },
+  "homepage": "https://github.com/ViniciusVinna/dotfiles#readme",
+  "scripts": {
+    "dump": "brew bundle dump --force && npmdump"
+  }
+}

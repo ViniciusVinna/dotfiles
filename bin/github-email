@@ -1,0 +1,22 @@
+#!/bin/bash
+# Created by Sindre Sorhus
+# Magically retrieves a GitHub user's email even though it's not publicly shown
+
+# Check if the required arguments are provided
+if [ "$1" = "" ]; then
+  echo "Usage: $0 <GitHub username> [<repo>]"
+  exit 1
+fi
+
+# Check if the repository name is provided or fetch the latest repository for the user
+if [ "$2" = "" ]; then
+  repo=$(curl "https://api.github.com/users/$1/repos?type=owner&sort=updated" -s | jq -r '.[0].name')
+else
+  repo=$2
+fi
+
+# Fetch the commits information for the specified user and repository
+commit_info=$(curl "https://api.github.com/repos/$1/$repo/commits" -s)
+
+# Extract and display the unique email and name pairs for each commit
+echo "$commit_info" | jq -r '"\(.commit.author.email) \(.commit.author.name)"' | sort -u -k1,1
