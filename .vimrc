@@ -190,24 +190,6 @@ let g:multi_cursor_prev_key = '<c-p>'
 let g:multi_cursor_skip_key = '<c-x>'
 let g:multi_cursor_quit_key = '<Esc>'
 
-" Surround
-let g:surround_{char2nr('-')} = "(- \r -)"
-let g:surround_{char2nr('=')} = "(= \r =)"
-let g:surround_{char2nr('~')} = "(~ \r ~)"
-let g:surround_{char2nr('`')} = "(` \r `)"
-let g:surround_{char2nr('\'')} = "(' \r ')"
-let g:surround_{char2nr('/')} = "(/ \r /)"
-let g:surround_{char2nr('<')}_visual = "<\r>"
-let g:surround_{char2nr('<')} = "<\r>"
-let g:surround_{char2nr('[')} = "[ \r ]"
-let g:surround_{char2nr(']')} = "[ \r ]"
-let g:surround_{char2nr('{')} = "{ \r }"
-let g:surround_{char2nr('}')} = "{ \r }"
-let g:surround_{char2nr('(')} = "( \r )"
-let g:surround_{char2nr(')')} = "( \r )"
-let g:surround_{char2nr('#')} = "#{\r}"
-let g:surround_{char2nr('*')} = "* \r *"
-
 " Endwise
 let g:endwise_no_mappings = 1
 
