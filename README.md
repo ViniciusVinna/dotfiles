@@ -176,53 +176,218 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-## ⚙️ NPM Global Packages Overview
+
+## Brew Packages
+<details>
+  <summary>Brew Commands: Installing CLI Tools and Utilities</summary>
+
+-   🍺 `ack`: Search tool, optimized for programmers.
+-   🍺 `awscli`: AWS Command Line Interface.
+-   🍺 `bash`: Latest version of Bash.
+-   🍺 `bash-completion@2`: Bash completion for Homebrew formulae.
+-   🍺 `bat`: Cat(1) clone with syntax highlighting and Git integration.
+-   🍺 `gettext`: GNU internationalization (i18n) and localization (l10n) library.
+-   🍺 `bfg`: Remove large files or passwords from Git history.
+-   🍺 `brew-cask-completion`: Bash completion for Homebrew Cask.
+-   🍺 `caddy`: Fast and easy-to-use web server with automatic HTTPS.
+-   🍺 `certbot`: Tool to obtain and renew Let's Encrypt SSL certificates.
+-   🍺 `cheat`: Create and view interactive cheatsheets on the command-line.
+-   🍺 `oniguruma`: Regular expressions library.
+-   🍺 `coreutils`: GNU core utilities (prefixed with 'g' by default).
+-   🍺 `direnv`: Environment switcher for the shell.
+-   🍺 `duf`: Disk Usage/Free Utility - a more modern 'df' alternative.
+-   🍺 `dust`: More intuitive version of 'du' (disk usage).
+-   🍺 `espanso`: Text expander written in Rust.
+-   🍺 `findutils`: Collection of GNU find, xargs, and locate.
+-   🍺 `fnm`: Node.js version manager.
+-   🍺 `fzf`: Command-line fuzzy finder.
+-   🍺 `gem-completion`: Bash completion for RubyGems.
+-   🍺 `gh`: GitHub CLI.
+-   🍺 `git`: Distributed version control system.
+-   🍺 `git-delta`: Syntax-highlighting pager for Git.
+-   🍺 `git-extras`: Extra git commands.
+-   🍺 `git-filter-repo`: Rewrite repositories to modernize history and more.
+-   🍺 `git-lfs`: Git extension for versioning large files.
+-   🍺 `gnupg`: GNU Pretty Good Privacy (PGP) package.
+-   🍺 `gnupg2`: GNU Pretty Good Privacy (PGP) package.
+-   🍺 `gping`: Ping, but with a graph.
+-   🍺 `grep`: GNU grep, egrep, and fgrep.
+-   🍺 `htmlq`: Command-line HTML processor.
+-   🍺 `htop`: Improved top (interactive process viewer).
+-   🍺 `httpd`: Apache HTTP Server.
+-   🍺 `httpie`: HTTP client for the command line.
+-   🍺 `hub`: GitHub command-line tools.
+-   🍺 `ievms`: Automated installation of Microsoft IE AppCompat VMs.
+-   🍺 `python@3.9`: Latest Python 3.9 version.
+-   🍺 `libheif`: HEIF file format decoder and encoder.
+-   🍺 `imagemagick`: Image processing tools and libraries.
+-   🍺 `jq`: Command-line JSON processor.
+-   🍺 `lame`: High-quality MPEG audio layer III (MP3) encoder.
+-   🍺 `launchctl-completion`: Bash completion for launchctl.
+-   🍺 `libyaml`: YAML parser and emitter library.
+-   🍺 `mariadb`: MariaDB database server.
+-   🍺 `mas`: Mac App Store command-line interface.
+-   🍺 `miller`: Like awk, sed, cut, join, and sort for name-indexed data.
+-   🍺 `mkcert`: Create locally-trusted development certificates.
+-   🍺 `mongosh`: MongoDB shell with enhancements.
+-   🍺 `mongodb/brew/mongodb-community`: MongoDB Community Edition.
+-   🍺 `nginx`: Web server.
+-   🍺 `ngrep`: Network grep.
+-   🍺 `nss`: Mozilla Network Security Services.
+-   🍺 `openssl@3`: Cryptography and SSL/TLS Toolkit (version 3.x).
+-   🍺 `pinentry-mac`: Simple PIN-entry dialog for GnuPG.
+-   🍺 `procs`: Top-like utility for monitoring processes.
+-   🍺 `pyenv-virtualenv`: Python version management.
+-   🍺 `rbenv`: Ruby version management.
+-   🍺 `rename`: Perl-powered file rename script.
+-   🍺 `ripgrep`: Line-oriented search tool.
+-   🍺 `screen`: Terminal multiplexer.
+-   🍺 `sd`: Intuitive find & replace CLI.
+-   🍺 `speedtest-cli`: Command-line interface for testing internet bandwidth.
+-   🍺 `packer`: Tool to build, change, and version infrastructure.
+-   🍺 `terraform`: Tool to build, change, and version infrastructure.
+-   🍺 `thefuck`: Magnificent app that corrects your previous console command.
+-   🍺 `tree`: Display directory tree, in color.
+-   🍺 `tig`: Text-mode interface for Git repositories.
+-   🍺 `vim`: Improved version of the standard Unix text editor.
+-   🍺 `volta`: JavaScript tool manager.
+-   🍺 `watchman`: File system watcher.
+-   🍺 `tldr`: Simplified and community-driven man pages.
+-   🍺 `wget`: Internet file retriever.
+-   🍺 `yarn`: Fast, reliable, and secure dependency management.
+-   🍺 `yarn-completion`: Bash completion for Yarn.
+-   🍺 `yt-dlp`: YouTube-DL fork with additional features and fixes.
+-   🍺 `zoxide`: Fast, flexible directory jumper.
+</details>
 
 
+<details>
+  <summary>Brew Commands: Programming Languages and Development Tools</summary>
 
-| :--: | :--: | ------- | --------------- |
-| Index | Emoji | Package Name | Description |
-| :--: | :--: | ------- | --------------- |
-| 1 | :package: | `@types/node` | TypeScript definitions for Node.js |
-| 2 | :cloud: | `aws-sdk` | AWS SDK for JavaScript in Node.js |
-| 3 | :key: | `aws4` | Signs and prepares requests using AWS Signature Version 4 |
-| 4 | :heavy_check_mark: | `bundle-phobia-cli` | CLI tool to find out the cost of adding a new npm package to your bundle |
-| 5 | :mag_right: | `check-side-effects` | Checks if your code has side-effects |
-| 6 | :computer: | `codesandbox` | Online code editor tailored for web applications |
-| 7 | :bridge_at_night: | `corepack` | Zero-runtime-dependency package acting as bridge between Node projects and their package managers |
-| 8 | :rocket: | `create-next-app` | Create Next.js apps in one command |
-| 9 | :detective: | `depcheck` | Check your npm module for unused dependencies |
-| 10 | :ferris_wheel: | `expo-cli` | Command line environment for Expo |
-| 11 | :fire: | `firebase-tools` | Firebase CLI provides a variety of tools for managing, viewing, and deploying to Firebase projects |
-| 12 | :book: | `gitbook-cli` | CLI to create books using GitBook |
-| 13 | :link: | `graphqurl` | curl for GraphQL with autocomplete, subscriptions and GraphiQL |
-| 14 | :runner: | `hopa` | Lightweight and easy-to-use runtime for JavaScript and TypeScript |
-| 15 | :globe_with_meridians: | `iectrl` | A CLI for Internet Explorer Virtual Machines |
-| 16 | :wrench: | `jscodeshift` | Toolkit for running large-scale JavaScript codemods |
-| 17 | :page_facing_up: | `json` | A 'json' command for massaging JSON on your Unix command line |
-| 18 | :house_with_garden: | `netlify-cli` | Netlify Command Line Interface |
-| 19 | :recycle: | `node-dev` | Zero-configuration developer tool for Node.js that automatically restarts the node process when a file is modified |
-| 20 | :eyes: | `nodemon` | Tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected |
-| 21 | :up: | `np` | A better `npm publish` |
-| 22 | :arrows_counterclockwise: | `npm-check-updates` | This module helps you to find newer versions of dependencies than what your package.json or bower.json allows |
-| 23 | :thinking_face: | `npm-consider` | Helps you to choose which NPM package to use by showing you bundle size and download count statistics |
-| 24 | :link: | `npm-link-up` | This tool helps to create links between local projects |
-| 25 | :clipboard: | `ntl` | Interactive cli menu to list and run package.json scripts |
-| 26 | :package: | `package-size` | Determine the size of a package before adding it to your bundle |
-| 27 | :robot: | `pm2` | Production process manager for Node.js apps with a built-in load balancer |
-| 28 | :paintbrush: | `prettier` | An opinionated code formatter |
-| 29 | :tada: | `release` | Generate a new GitHub Release with automated binary attachment and release notes from your recent commits |
-| 30 | :fast_forward: | `serve` | Static file serving and directory listing |
-| 31 | :cloud: | `serverless` | The Serverless Framework – Build web, mobile and IoT applications with serverless architectures |
-| 32 | :world_map: | `source-map-explorer` | Analyze and debug space usage through source maps |
-| 33 | :wave: | `surge` | Simple, single command web publishing. Publish HTML, CSS, and JS for free, without leaving the command line |
-| 34 | :art: | `svgo` | Node.js tool for optimizing SVG files |
-| 35 | :bookmark_tabs: | `tldr` | Simplified and community-driven man pages |
-| 36 | :shell: | `ts-node` | TypeScript execution and REPL for Node.js |
-| 37 | :deciduous_tree: | `tsm` | Tree shaking your css modules |
-| 38 | :high_brightness: | `tsx` | An advanced, feature-rich TypeScript syntax highlighter |
-| 39 | :writing_hand: | `typescript` | TypeScript is a language for application-scale JavaScript development |
-| 40 | :id: | `uuid` | Simple, fast generation of RFC4122 UUIDS |
-| 41 | :rocket: | `vercel` | CLI for Vercel and the Now platform |
-| 42 | :chart_with_upwards_trend: | `webpack-bundle-analyzer` | Plugin and CLI utility that represents bundle content as a convenient interactive zoomable treemap |
+-   🍺 `clojure`: Clojure programming language, a dynamic, general-purpose language, combining the approachability and interactive development of a scripting language with an efficient and robust infrastructure for multithreaded programming.
+-   🍺 `elixir`: Elixir programming language, a dynamic, functional language designed for building scalable and maintainable applications, leveraging the Erlang VM, known for running low-latency, distributed, and fault-tolerant systems.
+-   🍺 `ruby`: Ruby programming language.
+-   🍺 `lua`: Lua programming language.
+-   🍺 `node`: Node.js JavaScript runtime.
+-   🍺 `go`: Go programming language.
+-   🍺 `typescript`: Language for application-scale JavaScript development.
+-   🍺 `rust`: Rust programming language.
+-   🍺 `php`: Latest PHP version.
+-   🍺 `python`: Latest Python version.
+-   🍺 `deno`: Secure runtime for JavaScript and TypeScript.
+-   🍺 `composer`: Dependency Manager for PHP.
+-   🍺 `wp-cli`: Command-line interface for WordPress.
+-   🍺 `mongosh`: MongoDB Shell: An interactive JavaScript interface to MongoDB, enabling you to query and update data as well as perform administrative operations.
+-   🍺 `elixir-ls`: Elixir language server: An implementation of Microsoft's Language Server Protocol for the Elixir programming language, providing features like auto-completion, go to definition, and error checking to editors that support it.
+-   🍺 `mongodb/brew/mongodb-community`: MongoDB Community Edition.
+-   🍺 `mariadb`: Drop-in replacement for MySQL.
+</details>
 
+
+<details>
+  <summary>Cask Commands: Installing GUI Applications</summary>
+
+-   🍺 `iterm2`: Terminal emulator.
+-   🍺 `postman`: Collaboration platform for API development.
+-   🍺 `insomnia`: HTTP and GraphQL Client.
+-   🍺 `little-snitch`: Host-based application firewall.
+-   🍺 `tower`: Git client focusing on power and productivity.
+-   🍺 `robo-3t`: MongoDB management tool.
+-   🍺 `postgresql`: Object-relational database system.
+-   🍺 `anaconda`: Distribution of the Python and R programming languages for scientific computing.
+-   🍺 `sequel-pro`: MySQL/MariaDB database management platform.
+-   🍺 `mysqlworkbench`: Visual tool to design, develop, and administer MySQL servers.
+-   🍺 `robo-3t`: MongoDB management tool.
+-   🍺 `arduino`: Electronics prototyping platform.
+-   🍺 `visual-studio-code`: Open-source code editor.
+-   🍺 `lastpass`: Password manager.
+</details>
+
+<details>
+  <summary>Browsers</dummary>
+
+-   🍺 `chromium`: Chromium: An open-source web browser project from which Google Chrome draws its source code.
+-   🍺 `microsoft-edge`: Microsoft Edge: Microsoft's fast, secure, and modern web browser built on the open-source Chromium project.
+-   🍺 `firefox`: Firefox: Mozilla's popular open-source web browser known for its speed, lightness, and add-on community.
+-   🍺 `firefox-developer-edition`: Firefox Developer Edition: Offers the latest features and tools you need to build for the open web; includes experimental features such as the Multi-line Console Editor and WebSocket Inspector.
+-   🍺 `google-chrome`: Google Chrome: Google's web browser, known for its speed and simplicity.
+</details>
+
+<details>
+  <summary>Communication</summary>
+
+-   🍺 `discord`: Discord: All-in-one voice, video, and text chat for gamers that's free, secure, and works on both your desktop and phone.
+-   🍺 `slack`: Slack: A collaboration hub.
+-   🍺 `gather`: Gather: A gamified collaboration hub.
+-   🍺 `fig`: Fig is a command-line utility designed to enhance and improve the user experience when working with the terminal.
+-   🍺 `github`: Git GUI.
+-   🍺 `staruml`: Software modeler.
+-   🍺 `xampp`: Apache distribution containing MySQL, PHP, and Perl.
+-   🍺 `synergy-core`: Synergy, the keyboard and mouse sharing tool.
+-   🍺 `shuttle`: Simple shortcut menu.
+-   🍺 `alfred`: Application launcher and productivity software.
+-   🍺 `browserstacklocal`: Test localhost and staging websites.
+-   🍺 `authy`: Two-factor authentication software.
+-   🍺 `cyberduck`: Server and cloud storage browser.
+-   🍺 `qlcolorcode`: QuickLook plug-in that renders source code with syntax highlighting.
+-   🍺 `gettext`: GNU internationalization (i18n) and localization (l10n) library.
+-   🍺 `graphql-playground`: GraphQL IDE for better development workflows.
+-   🍺 `imageoptim`: Tool to optimize images to a smaller size.
+-   🍺 `jetbrains-toolbox`: JetBrains tools manager.
+-   🍺 `kindle`: Interface for reading and syncing eBooks.
+-   🍺 `notion`: App to write, plan, collaborate, and get organized.
+-   🍺 `pixelsnap`: Screen measuring tool.
+</details>
+
+
+<details>
+  <summary>Color Pickers</summary>
+
+-   🍺 `colorpicker-materialdesign`: Material Design Color Picker: A color picker built by Google that helps you choose colors according to Material Design guidelines.
+-   🍺 `colorpicker-propicker`: Propicker: A macOS color picker app that provides many different ways to pick color and copy it directly into the clipboard.
+-   🍺 `colorpicker-skalacolor`: Skala Color: A compact and feature-rich macOS color picker that works with a huge variety of formats, covering everything you’re likely to need for web, iOS, Android, and macOS development.
+</details>
+
+
+<details>
+  <summary>QuickLook Plugins</summary>
+
+-   🍺 `qlimagesize`: Display image info and preview unsupported formats in QuickLook.
+-   🍺 `qlmarkdown`: QuickLook generator for Markdown files.
+-   🍺 `qlprettypatch`: QLPrettyPatch.
+-   🍺 `quicklook-csv`: QuickLook plugin for CSV files.
+-   🍺 `quicklook-json`: QuickLook plugin for JSON files.
+
+<details>
+  <summary>Productivity</summary>
+
+-   🍺 `raycast`: Control your tools with a few keystrokes.
+-   🍺 `suspicious-package`: Suspicious Package: An application that allows you to inspect the contents of a macOS Installer package (.pkg) before you install it to ensure it doesn't contain anything unexpected or malicious.
+-   🍺 `swiftbar`: Menu bar customization tool.
+-   🍺 `taskade`: Task manager for teams.
+-   🍺 `the-unarchiver`: Unpacks archive files.
+-   🍺 `vanilla`: Tool to hide menu bar icons.
+</details>
+
+<details>
+  <summary>Creative Software</summary>
+
+-   🍺 `adobe-creative-cloud`: Collection of apps and services for photography, design, video, web, and UX.
+</details>
+
+<details>
+  <summary>Typography</summary>
+
+-   🍺 `font-dejavu-sans-mono-for-powerline`: DejaVu Sans Mono font with Powerline support.
+-   🍺 `font-fira-code-nerd-font`: Fira Code Nerd Font.
+-   🍺 `font-inconsolata`: Inconsolata font.
+-   🍺 `font-inconsolata-dz-for-powerline`: Inconsolata Dz font with Powerline support.
+-   🍺 `font-inconsolata-for-powerline`: Inconsolata font with Powerline support.
+-   🍺 `font-jetbrains-mono`: JetBrains Mono font.
+-   🍺 `font-jetbrains-mono-nerd-font`: JetBrains Mono Nerd Font.
+-   🍺 `font-source-code-pro`: Source Code Pro font.
+-   🍺 `font-source-code-pro-for-powerline`: Source Code Pro font with Powerline support.
+-   🍺 `font-ubuntu`: Ubuntu font.
+</details>
+
+## NPM Global Packages Overview
