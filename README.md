@@ -19,6 +19,10 @@
 - 🚀 [Changing Ulimit in macOS Sierra and Later](#-changing-ulimit-in-macos-sierra-and-later)
 - 🎨 [PowerLevel10k In OhMyZsh](#-powerlevel10k-theme-in-ohmyzsh)
 - ⚙️ [OhMyZsh Aditional Configs](#%EF%B8%8F-additional-ohmyzsh-configurations)
+- ⚙️ [OhMyZsh Aditional Configs](#%EF%B8%8F-additional-ohmyzsh-configurations)
+- 🫣 [Packages: Sneak peek]()
+  - 🍺 [`Brewfile` Package List]()
+  - 📦 [`NPMfile` Package List]()
 
 
 ## 👋 Introduction
@@ -176,8 +180,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
+## 🫣 Packages: Sneak peek
 
-## Brew Packages
+#### 🍺 `Brewfile` Package List
 <details>
   <summary>Brew Commands: Installing CLI Tools and Utilities</summary>
 
@@ -304,7 +309,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 </details>
 
 <details>
-  <summary>Browsers</dummary>
+  <summary>Browsers</summary>
 
 -   🍺 `chromium`: Chromium: An open-source web browser project from which Google Chrome draws its source code.
 -   🍺 `microsoft-edge`: Microsoft Edge: Microsoft's fast, secure, and modern web browser built on the open-source Chromium project.
@@ -373,6 +378,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
   <summary>Creative Software</summary>
 
 -   🍺 `adobe-creative-cloud`: Collection of apps and services for photography, design, video, web, and UX.
+
 </details>
 
 <details>
@@ -390,4 +396,51 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 -   🍺 `font-ubuntu`: Ubuntu font.
 </details>
 
-## NPM Global Packages Overview
+#### 📦 `NPMfile` Package List
+
+<details>
+  <summary>Packages</summary>
+
+-   📦 **@types/node**: TypeScript definitions for Node.js.
+-   📦 **aws-sdk**: AWS SDK for JavaScript.
+-   📦 **aws4**: Sign AWS requests with signature version 4.
+-   📦 **bundle-phobia-cli**: Check the size of an NPM package before installing it.
+-   📦 **check-side-effects**: Detect side effects in JavaScript modules.
+-   📦 **codesandbox**: Online code editor tailored for web application development.
+-   📦 **corepack**: Zero-configuration JavaScript monorepo and workspace manager.
+-   📦 **create-next-app**: Create a new Next.js app.
+-   📦 **depcheck**: Check for unused dependencies.
+-   📦 **expo-cli**: Command-line interface for Expo, a framework for building universal applications.
+-   📦 **firebase-tools**: CLI to interact with Firebase services.
+-   📦 **gitbook-cli**: Create and publish beautiful books using Git and Markdown.
+-   📦 **graphqurl**: cURL for GraphQL, a command-line tool for making GraphQL queries.
+-   📦 **hopa**: Simplified HTTP requests using promises.
+-   📦 **iectrl**: Interact with Internet Explorer instances programmatically.
+-   📦 **jscodeshift**: Toolkit for running codemods over multiple JavaScript files.
+-   📦 **json**: JSON command-line tool.
+-   📦 **netlify-cli**: Command-line interface for Netlify, a web hosting and serverless backend service.
+-   📦 **node-dev**: Monitor and restart a Node.js application on file changes.
+-   📦 **nodemon**: Monitor and automatically restart a Node.js application on file changes.
+-   📦 **np**: Better npm publish.
+-   📦 **npm-check-updates**: Check for updates of npm packages.
+-   📦 **npm-consider**: Analyze dependencies in npm projects.
+-   📦 **npm-link-up**: Interactive npm link.
+-   📦 **ntl**: Interactive CLI for running npm scripts.
+-   📦 **package-size**: Display the size of an npm package.
+-   📦 **pm2**: Advanced process manager for Node.js applications.
+-   📦 **prettier**: Opinionated code formatter.
+-   📦 **release**: Automate versioning and changelog generation.
+-   📦 **serve**: Static file server.
+-   📦 **serverless**: Framework for building serverless applications.
+-   📦 **source-map-explorer**: Analyze and visualize the size of JavaScript bundles.
+-   📦 **surge**: Static web publishing for Front-End Developers.
+-   📦 **svgo**: Node.js tool for optimizing SVG files.
+-   📦 **tldr**: Simplified and community-driven man pages.
+-   📦 **ts-node**: TypeScript execution and REPL for Node.js.
+-   📦 **tsm**: Simple and fast module bundler for TypeScript projects.
+-   📦 **tsx**: TypeScript transformer for JSX syntax.
+-   📦 **typescript**: TypeScript language.
+-   📦 **uuid**: Generate RFC-compliant UUIDs.
+-   📦 **vercel**: Deploy websites and web apps with ease.
+-   📦 **webpack-bundle-analyzer**: Visualize the size of webpack output files.
+</details>
