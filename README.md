@@ -362,6 +362,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 -   🍺 `qlprettypatch`: QLPrettyPatch.
 -   🍺 `quicklook-csv`: QuickLook plugin for CSV files.
 -   🍺 `quicklook-json`: QuickLook plugin for JSON files.
+</details>
 
 <details>
   <summary>Productivity</summary>
