@@ -1,10 +1,11 @@
 ```bash
-  _    _______   ___   _____   _ _____    ____  ____  __________________    ___________
- | |  / /  _/ | / / | / /   | ( ) ___/   / __ \/ __ \/_  __/ ____/  _/ /   / ____/ ___/
- | | / // //  |/ /  |/ / /| | |/\__ \   / / / / / / / / / / /_   / // /   / __/  \__ \
- | |/ // // /|  / /|  / ___ |  ___/ /  / /_/ / /_/ / / / / __/ _/ // /___/ /___ ___/ /
- |___/___/_/ |_/_/ |_/_/  |_| /____/  /_____/\____/ /_/ /_/   /___/_____/_____//____/
 
+██╗   ██╗██╗███╗   ██╗███╗   ██╗ █████╗     ███████╗    ██████╗  ██████╗ ████████╗███████╗██╗██╗     ███████╗███████╗
+██║   ██║██║████╗  ██║████╗  ██║██╔══██╗    ██╔════╝    ██╔══██╗██╔═══██╗╚══██╔══╝██╔════╝██║██║     ██╔════╝██╔════╝
+██║   ██║██║██╔██╗ ██║██╔██╗ ██║███████║    ███████╗    ██║  ██║██║   ██║   ██║   █████╗  ██║██║     █████╗  ███████╗
+╚██╗ ██╔╝██║██║╚██╗██║██║╚██╗██║██╔══██║    ╚════██║    ██║  ██║██║   ██║   ██║   ██╔══╝  ██║██║     ██╔══╝  ╚════██║
+ ╚████╔╝ ██║██║ ╚████║██║ ╚████║██║  ██║    ███████║    ██████╔╝╚██████╔╝   ██║   ██║     ██║███████╗███████╗███████║
+  ╚═══╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚═╝  ╚═╝    ╚══════╝    ╚═════╝  ╚═════╝    ╚═╝   ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
 ```
 
 ## Table of Contents
@@ -19,14 +20,15 @@
 - 🚀 [Changing Ulimit in macOS Sierra and Later](#-changing-ulimit-in-macos-sierra-and-later)
 - 🎨 [PowerLevel10k In OhMyZsh](#-powerlevel10k-theme-in-ohmyzsh)
 - ⚙️ [OhMyZsh Aditional Configs](#%EF%B8%8F-additional-ohmyzsh-configurations)
-- ⚙️ [OhMyZsh Aditional Configs](#%EF%B8%8F-additional-ohmyzsh-configurations)
-- 🫣 [Packages: Sneak peek]()
-  - 🍺 [`Brewfile` Package List]()
-  - 📦 [`NPMfile` Package List]()
+- 🫣 [Packages: Sneak peek](#-packages-sneak-peek)
+  - 🍺 [`Brewfile` Package List](#-brewfile-package-list)
+  - 📦 [`NPMfile` Package List](#-npmfile-package-list)
 
 
 ## 👋 Introduction
-This repository combines the dotfiles of Paul Irish with the powerbook of Raúl Uranga. Its primary use is personal but feel free to suggest improvements or fork it!
+Its primary use is personal, but feel free to suggest improvements or fork it!
+I shamelessly borrowed the foundation of this repository from my mentor and former technical leader, [Gil Barbara](https://github.com/gilbarbara) who crafted his fantastic[dotfiles](https://github.com/gilbarbara/dotfiles) combining the legendary work of [Mathias Bynens](https://github.com/mathiasbynens/dotfiles), [Paul Irish](https://github.com/paulirish/dotfiles) and [Raúl Uranga](https://github.com/rauluranga/powerbook) powerbook. Cheers to the open-source spirit and the awesome tech community! 🎉🙌"
+
 
 ## 🛠️ Application Installation
 
@@ -265,7 +267,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 🍺 `zoxide`: Fast, flexible directory jumper.
 </details>
 
-
 <details>
   <summary>Brew Commands: Programming Languages and Development Tools</summary>
 
@@ -287,7 +288,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 🍺 `mongodb/brew/mongodb-community`: MongoDB Community Edition.
 > - 🍺 `mariadb`: Drop-in replacement for MySQL.
 </details>
-
 
 <details>
   <summary>Cask Commands: Installing GUI Applications</summary>
@@ -344,7 +344,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 🍺 `pixelsnap`: Screen measuring tool.
 </details>
 
-
 <details>
   <summary>Color Pickers</summary>
 
@@ -352,7 +351,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 🍺 `colorpicker-propicker`: Propicker: A macOS color picker app that provides many different ways to pick color and copy it directly into the clipboard.
 > - 🍺 `colorpicker-skalacolor`: Skala Color: A compact and feature-rich macOS color picker that works with a huge variety of formats, covering everything you’re likely to need for web, iOS, Android, and macOS development.
 </details>
-
 
 <details>
   <summary>QuickLook Plugins</summary>
@@ -396,6 +394,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 🍺 `font-source-code-pro-for-powerline`: Source Code Pro font with Powerline support.
 > - 🍺 `font-ubuntu`: Ubuntu font.
 </details>
+
+---
 
 #### 📦 `NPMfile` Package List
 
