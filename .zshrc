@@ -42,5 +42,11 @@ export SDKMAN_OFFLINE_MODE=false
 
 export GPG_TTY=$(tty)
 
+# Android SDK location
+export ANDROID_HOME=$HOME
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # ZSH Plugins
 source ~/.dotfiles/lib/zsh-autoenv/autoenv.zsh

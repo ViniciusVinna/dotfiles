@@ -252,6 +252,10 @@ cask "firefox"
 cask "firefox-developer-edition"
 # Google Chrome: Google's web browser, known for its speed and simplicity.
 cask "google-chrome"
+# SigmaOS: A web browser that allows you to organize your tabs into workspaces, which you can switch between easily.
+cask "sigmaos"
+# Arc Browser: A web browser that allows you to organize your tabs into workspaces, which you can switch between easily.
+cask "arc"
 # File sync software
 cask "google-drive"
 # Commincation
@@ -339,3 +343,4 @@ cask "font-jetbrains-mono-nerd-font"
 cask "font-source-code-pro"
 cask "font-source-code-pro-for-powerline"
 cask "font-ubuntu"
+

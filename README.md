@@ -25,11 +25,10 @@
   - 🍺 [`Brewfile` Package List](#-brewfile-package-list)
   - 📦 [`NPMfile` Package List](#-npmfile-package-list)
 
-
 ## 👋 Introduction
+
 Its primary use is personal, but feel free to suggest improvements or fork it!
 I shamelessly borrowed the foundation of this repository from my mentor and former technical leader, [Gil Barbara](https://github.com/gilbarbara) who crafted his fantastic[dotfiles](https://github.com/gilbarbara/dotfiles) combining the legendary work of [Mathias Bynens](https://github.com/mathiasbynens/dotfiles), [Paul Irish](https://github.com/paulirish/dotfiles) and [Raúl Uranga](https://github.com/rauluranga/powerbook) powerbook. Cheers to the open-source spirit and the awesome tech community! 🎉🙌"
-
 
 ## 🛠️ Application Installation
 
@@ -107,6 +106,7 @@ Note that Homebrew's package installation path differs based on the Mac model:
 ## 💻 Installation
 
 To install, clone this repository to your `home directory`, navigate to it, and run `setup.sh`:
+
 ```shell
 git clone https://github.com/ViniciusVinna/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && ./setup.sh
 ```
@@ -129,10 +129,12 @@ pinentry-program $(brew --prefix)/bin/pinentry-mac
 ```
 
 Follow these guides for further details:
+
 - [Methods of Signing with a GPG Key on MacOS](https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e)
 - [Github Email](https://github.com/settings/emails)
 
 ## 🚀 Changing Ulimit in macOS Sierra and Later
+
 To change the ulimit on Mac OS X 10.12 and later, run the following commands:
 
 ```bash
@@ -164,6 +166,7 @@ To use the **PowerLevel10k** theme in **OhMyZsh**, clone the repository and set 
 ```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
+
 To run the PowerLevel10k configuration wizard, enter the following command in your terminal:
 
 Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`.
@@ -175,6 +178,7 @@ p10k configure
 ```
 
 ## ⚙️ Additional OhMyZsh Configurations
+
 You can also add additional configurations for `OhMyZsh`:
 
 ```bash
@@ -186,6 +190,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ## 🫣 Packages: Sneak peek
 
 #### 🍺 `Brewfile` Package List
+
 <details>
   <summary>Brew Commands: Installing CLI Tools and Utilities</summary>
 
@@ -266,6 +271,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 🍺 `yarn-completion`: Bash completion for Yarn.
 > - 🍺 `yt-dlp`: YouTube-DL fork with additional features and fixes.
 > - 🍺 `zoxide`: Fast, flexible directory jumper.
+
 </details>
 
 <details>
@@ -288,6 +294,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 🍺 `elixir-ls`: Elixir language server: An implementation of Microsoft's Language Server Protocol for the Elixir programming language, providing features like auto-completion, go to definition, and error checking to editors that support it.
 > - 🍺 `mongodb/brew/mongodb-community`: MongoDB Community Edition.
 > - 🍺 `mariadb`: Drop-in replacement for MySQL.
+
 </details>
 
 <details>
@@ -307,6 +314,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 🍺 `arduino`: Electronics prototyping platform.
 > - 🍺 `visual-studio-code`: Open-source code editor.
 > - 🍺 `lastpass`: Password manager.
+
 </details>
 
 <details>
@@ -317,6 +325,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 🍺 `firefox`: Firefox: Mozilla's popular open-source web browser known for its speed, lightness, and add-on community.
 > - 🍺 `firefox-developer-edition`: Firefox Developer Edition: Offers the latest features and tools you need to build for the open web; includes experimental features such as the Multi-line Console Editor and WebSocket Inspector.
 > - 🍺 `google-chrome`: Google Chrome: Google's web browser, known for its speed and simplicity.
+> - 🍺 `arc`: A web browser that allows you to organize your tabs into workspaces.
+> - 🍺 `sigmaOS`: A web browser that allows you to organize your tabs into workspaces, which you can switch between easily.
+
 </details>
 
 <details>
@@ -343,6 +354,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 🍺 `kindle`: Interface for reading and syncing eBooks.
 > - 🍺 `notion`: App to write, plan, collaborate, and get organized.
 > - 🍺 `pixelsnap`: Screen measuring tool.
+
 </details>
 
 <details>
@@ -351,6 +363,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 🍺 `colorpicker-materialdesign`: Material Design Color Picker: A color picker built by Google that helps you choose colors according to Material Design guidelines.
 > - 🍺 `colorpicker-propicker`: Propicker: A macOS color picker app that provides many different ways to pick color and copy it directly into the clipboard.
 > - 🍺 `colorpicker-skalacolor`: Skala Color: A compact and feature-rich macOS color picker that works with a huge variety of formats, covering everything you’re likely to need for web, iOS, Android, and macOS development.
+
 </details>
 
 <details>
@@ -361,6 +374,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 🍺 `qlprettypatch`: QLPrettyPatch.
 > - 🍺 `quicklook-csv`: QuickLook plugin for CSV files.
 > - 🍺 `quicklook-json`: QuickLook plugin for JSON files.
+
 </details>
 
 <details>
@@ -372,6 +386,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 🍺 `taskade`: Task manager for teams.
 > - 🍺 `the-unarchiver`: Unpacks archive files.
 > - 🍺 `vanilla`: Tool to hide menu bar icons.
+
 </details>
 
 <details>
@@ -394,6 +409,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 🍺 `font-source-code-pro`: Source Code Pro font.
 > - 🍺 `font-source-code-pro-for-powerline`: Source Code Pro font with Powerline support.
 > - 🍺 `font-ubuntu`: Ubuntu font.
+
 </details>
 
 ---
@@ -445,4 +461,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 > - 📦 **uuid**: Generate RFC-compliant UUIDs.
 > - 📦 **vercel**: Deploy websites and web apps with ease.
 > - 📦 **webpack-bundle-analyzer**: Visualize the size of webpack output files.
+
 </details>
